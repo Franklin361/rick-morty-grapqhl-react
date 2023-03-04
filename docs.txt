@@ -1,8 +1,0 @@
-
-📣 https://github.com/Franklin361/show-photos-app/blob/main/src/graphql/client.ts
-📣 https://www.youtube.com/watch?v=sVFocedf-iU&t=3735s
-📣 https://www.apollographql.com/docs/react/
-📣 https://www.apollographql.com/docs/react/api/core/ApolloClient/
-📣 https://www.apollographql.com/docs/react/networking/basic-http-networking
-📣 https://www.apollographql.com/docs/react/networking/advanced-http-networking/
-📣 https://www.apollographql.com/docs/react/api/link/introduction/

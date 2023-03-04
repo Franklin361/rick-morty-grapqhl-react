@@ -26,36 +26,20 @@ export const CharacterInfo = ({ characterId }: { characterId: string }) => {
       />
 
       <div className='w-full sm:w-fit flex flex-col gap-2'>
-        <ItemValue
-          label='Status'
-          value={status}
-        />
-        <ItemValue
-          label='Specie'
-          value={species}
-        />
-        <ItemValue
-          label='Gender'
-          value={gender}
-        />
+        <p className='rounded-lg bg-gray-800 p-4 text-start sm:text-xl text-lg relative'>
+          Status: {status}
+        </p>
+        <p className='rounded-lg bg-gray-800 p-4 text-start sm:text-xl text-lg relative'>
+          Specie: {species}
+        </p>
+        <p className='rounded-lg bg-gray-800 p-4 text-start sm:text-xl text-lg relative'>
+          Gender: {gender}
+        </p>
+
         <p className='mt-2 text-lg'>
           Created at: <span>{created}</span>
         </p>
       </div>
     </div>
-  );
-};
-
-export const ItemValue = ({
-  label,
-  value,
-}: {
-  label: string;
-  value: string;
-}) => {
-  return (
-    <p className='rounded-lg bg-gray-800 p-4 text-start sm:text-xl text-lg relative'>
-      {label}: <span className='font-bold'>{value}</span>
-    </p>
   );
 };

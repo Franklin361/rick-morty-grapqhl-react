@@ -19,22 +19,20 @@ export const Grid = () => {
   if (error) return <ErrorMessage error={error.message} />;
 
   return (
-    <>
-      <section className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 my-10 lg:gap-10 gap-5  px-5 sm:px-8 lg:px-12'>
-        {data?.characters.results.map((character, index) => (
-          <CardCharacter
-            key={character.id}
-            {...character}
-            index={index}
-            onSelected={(characterId: string) => setSelected(characterId)}
-          />
-        ))}
-
-        <CharacterSelected
-          onClearSelected={() => setSelected(null)}
-          characterId={selected}
+    <section className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 my-10 lg:gap-10 gap-5  px-5 sm:px-8 lg:px-12'>
+      {data?.characters.results.map((character, index) => (
+        <CardCharacter
+          key={character.id}
+          {...character}
+          index={index}
+          onSelected={(characterId: string) => setSelected(characterId)}
         />
-      </section>
-    </>
+      ))}
+
+      <CharacterSelected
+        onClearSelected={() => setSelected(null)}
+        characterId={selected}
+      />
+    </section>
   );
 };
